@@ -7,3 +7,8 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
+
+df.drop('city',axis=1,inplace=True)
+dr=df['age']
+dr=df['age']=df['age']+2
+print(df)
